@@ -14,7 +14,7 @@
 - **DESCRIPTION:**
 &ensp;GraphSum is the module used to process RDF data into summary graph based on hashtable schema. You should have an RDF dataset in NT format as program input. The output of program is a summary graph hashtable. GraphSum is a maven project. You need to install maven to compile the project. 
 
-- **INSTALL:**
+- **INSTALLATION:**
 ```
 cd GraphSum;
 mvn package;
