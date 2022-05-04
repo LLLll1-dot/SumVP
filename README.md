@@ -1,6 +1,6 @@
 # SumVP
 # 1. Overview
-&ensp;&ensp;&ensp;&ensp;We propose a novel framework to accelerate complex SPARQL queries by summary-based vertical partitioning and statistics optimization over the Spark platform. We introduce vertical partitioning approach for RDF summary graph called SumVP, and complex SPARQL queries are made by translating them into Spark SQL queries based on binary statistics of tables (BT) and ternary tables (TT) to accelerate querying evaluation. We use Spark SQL API to execute query evaluation.
+&ensp;&ensp;&ensp;&ensp;We propose a novel framework to accelerate complex SPARQL queries by summary-based vertical partitioning and statistics optimization over the Spark platform. We introduce vertical partitioning approach for RDF summary graph called SumVP, and complex SPARQL queries are made by translating them into Spark SQL queries based on binary statistics of tables (_BT_) and ternary tables (_TT_) to accelerate querying evaluation. We use Spark SQL API to execute query evaluation.
 # 2. Requirements
 - [Java](https://www.oracle.com/java/technologies/downloads/) 8+
 - [Scala](https://www.scala-lang.org/download/) 2.11+
@@ -21,9 +21,9 @@ mvn package;
 ```
 - **EXECUTION:**
 ```
-spark submit
+spark submit --class GraphActor.driver --master <master-url> --deploy-mode <deploy-mode> --conf <key>=<value> graphSum.jar <RDF file path> <output path>;
 ```
-## (2) BT/TT create (DataCreator)
+## (2) _BT_/_TT_ create (DataCreator)
 - **DESCRIPTION:** The function of this module is to convert the hash table of the summary graph generated in the graph summarization module into the binary table and ternary table. During the creation process DataCreator generates four statistic files (stat_vp.txt, stat_ss.txt, stat_os.txt, stat_so.txt), which are used for SPARQL query translation to SQL by QueryTranslator.
 - 
 - **EXECUTION:**
