@@ -9,7 +9,7 @@
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/) 2019+
 - [Apache Maven](https://maven.apache.org/index.html) 3.9+
 # 3. How to use it?
-&ensp;&ensp;&ensp;&ensp;In this package, we provide sources to process and query RDF datasets. For space reasons, we did not unload the datasets. You can get the corresponding RDF datasets from LUBM, WatDiv and other places. It is worth noting that all RDF datasets have to be in the N-Triples format. If your RDF data is in XML format, you can use [rdf2rdf-1.0.1-2.3.1.jar](http://www.l3s.de/~minack/rdf2rdf/) to convert it to NT format. There are four modules in SumVP. In each module, we provide a running jar package. Of course, you can also run our code in your own way.
+&ensp;&ensp;&ensp;&ensp;In this package, we provide sources to process and query RDF datasets. For space reasons, we did not unload the datasets. You can get the corresponding RDF datasets from [LUBM](http://swat.cse.lehigh.edu/projects/lubm/), [WatDiv](https://dsg.uwaterloo.ca/watdiv/) and other places. It is worth noting that all RDF datasets have to be in the N-Triples format. If your RDF data is in XML format, you can use [rdf2rdf-1.0.1-2.3.1.jar](http://www.l3s.de/~minack/rdf2rdf/) to convert it to NT format. There are four modules in SumVP. In each module, we provide a running jar package. Of course, you can also run our code in your own way.
 ## (1) graph summarization (GraphSum)
 - DESCRIPTION: 
 &ensp;GraphSum is the module used to process RDF data into summary graph based on hashtable schema. You should have an RDF dataset in NT format as program input. The output of program is a summary graph hashtable. GraphSum is a maven project. You need to install maven to compile the project. 
