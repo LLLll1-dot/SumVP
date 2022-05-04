@@ -42,5 +42,5 @@ spark-submit --class sparqlTranslator.runDriver --master <master-url> --deploy-m
 
 - **EXECUTION:**
 ```
-spark-submit --class queryExecutor.runDriver --master spark://master:7077 --master <master-url> --deploy-mode <deploy-mode> --conf <key>=<value> QueryExecutor.jar <HDFS path> <hashtable path> <query file>;
+spark-submit --class queryExecutor.runDriver --master spark://master:7077 --master <master-url> --deploy-mode <deploy-mode> --conf <key>=<value> QueryExecutor.jar <HDFS path> <hashtable path> <query file> <repeat times>;
 ```
