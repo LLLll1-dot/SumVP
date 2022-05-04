@@ -25,7 +25,7 @@ spark submit --class GraphActor.driver --master <master-url> --deploy-mode <depl
 ```
 ## (2) _BT_/_TT_ create (DataCreator)
 - **DESCRIPTION:** The function of this module is to convert the hash table of the summary graph generated in the graph summarization module into the binary table and ternary table. During the creation process DataCreator generates four statistic files (stat_vp.txt, stat_ss.txt, stat_os.txt, stat_so.txt), which are used for SPARQL query translation to SQL by QueryTranslator.
-- 
+
 - **EXECUTION:**
 ```
 spark-submit --class dataCreator.runDriver --master <master-url> --deploy-mode <deploy-mode> --conf <key>=<value> dataCreator.jar <HDFS path> <RDF file>;
